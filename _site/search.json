@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "This is test_web",
+    "section": "",
+    "text": "Show All Code   Hide All Code"
+  },
+  {
+    "objectID": "index.html#제1장-구조방정식-모형의-소개",
+    "href": "index.html#제1장-구조방정식-모형의-소개",
+    "title": "This is test_web",
+    "section": "제1장 구조방정식 모형의 소개",
+    "text": "제1장 구조방정식 모형의 소개"
+  },
+  {
+    "objectID": "index.html#제2장-자료의-준비",
+    "href": "index.html#제2장-자료의-준비",
+    "title": "This is test_web",
+    "section": "제2장 자료의 준비",
+    "text": "제2장 자료의 준비"
+  },
+  {
+    "objectID": "index.html#제3장-구조방정식-모형의-이해",
+    "href": "index.html#제3장-구조방정식-모형의-이해",
+    "title": "This is test_web",
+    "section": "제3장 구조방정식 모형의 이해",
+    "text": "제3장 구조방정식 모형의 이해\n구조방정식 모형을 구조모형과 측정모형으로 나뉘어져 있다.\n경로도(path diagram)를 통해 구조방정식 모형의 가설을 볼 수 있음 \n이때, 측정모형에 해당하는 부분은 다음과 같고 \n\n\nCode\n\n\n\nlibrary(lavaan)\nmodel &lt;- '\n  우울 =~ 우울1 + 우울2 + 우울3\n  면역기능 =~ 면역1 + 면역2 + 면역3\n  질병 =~ 질병1 + 질병2 + 질병3\n  우울 ~~ 면역기능\n  우울 ~~ 질병\n  면역기능 ~~ 질병\n'\ndata &lt;- data.frame(\n  우울1 = rnorm(100, mean = 50, sd = 10),\n  우울2 = rnorm(100, mean = 50, sd = 10),\n  우울3 = rnorm(100, mean = 50, sd = 10),\n  면역1 = rnorm(100, mean = 50, sd = 10),\n  면역2 = rnorm(100, mean = 50, sd = 10),\n  면역3 = rnorm(100, mean = 50, sd = 10),\n  질병1 = rnorm(100, mean = 50, sd = 10),\n  질병2 = rnorm(100, mean = 50, sd = 10),\n  질병3 = rnorm(100, mean = 50, sd = 10)\n)\n# 모델 적합\nfit &lt;- sem(model, data = data)\n\n# 결과 출력\nsummary(fit, fit.measures = TRUE, standardized = TRUE)\n\n\n\n\n\n\n사진2\n\n\n구조모형에 해당하는 부분은 다음과 같다. \n전체 구조방정식 모형의 경로도를 수식으로 나타내면 다음과 같다. \n\n\n\nCode\n\n\n\ny &lt;-c(2,3)\n\n\n\n\n\n\nCode\n\n\n\nz &lt;- c(5,6)"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "계량심리연구실 테스트 웹입니다."
+  }
+]
