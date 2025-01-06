@@ -67,7 +67,7 @@
     "href": "chapter3.html",
     "title": "3장 구조방정식 모형의 이해",
     "section": "",
-    "text": "Show All Code   Hide All Code \n\n\n\n\n1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해\n\n\n\n\n기본 설명\n구조방정식 모형을 구조모형과 측정모형으로 나뉘어져 있다.\n경로도(path diagram)를 통해 구조방정식 모형의 가설을 볼 수 있음 \n\n\n측정모형\n이때, 측정모형에 해당하는 부분은 다음과 같고 \n\n\nCode\n\n\n목차나와라\n\nlibrary(lavaan)\n\nWarning: package 'lavaan' was built under R version 4.3.3\n\n\nThis is lavaan 0.6-19\nlavaan is FREE software! Please report any bugs.\n\n\n\n\n\n\n\n사진2\n\n\n구조모형에 해당하는 부분은 다음과 같다. \n전체 구조방정식 모형의 경로도를 수식으로 나타내면 다음과 같다. \n\n\n\nCode\n\n\n\ny &lt;-c(2,3)\n\n\n\n\n\n\nCode\n\n\n\nz &lt;- c(5,6)"
+    "text": "Show All Code   Hide All Code \n\n\n\n\n1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해\n\n\n\n\n기본 설명\n구조방정식 모형을 구조모형과 측정모형으로 나뉘어져 있다.\n경로도(path diagram)를 통해 구조방정식 모형의 가설을 볼 수 있음 \n\n\n측정모형\n이때, 측정모형에 해당하는 부분은 다음과 같고 \n\n\nCode\n\n\n\nlibrary(lavaan)\n\nWarning: package 'lavaan' was built under R version 4.3.3\n\n\nThis is lavaan 0.6-19\nlavaan is FREE software! Please report any bugs.\n\n\n\n\n\n\n\n사진2\n\n\n구조모형에 해당하는 부분은 다음과 같다. \n전체 구조방정식 모형의 경로도를 수식으로 나타내면 다음과 같다. \n\n\n\nCode\n\n\n\ny &lt;-c(2,3)\n\n\n\n\n\n\nCode\n\n\n\nz &lt;- c(5,6)"
   },
   {
     "objectID": "chapter2.html",
@@ -144,6 +144,6 @@
     "href": "SEM/chapter3.html",
     "title": "3장 구조방정식 모형의 이해",
     "section": "",
-    "text": "Show All Code   Hide All Code \n\n\n\n\n1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해\n\n\n\n\n기본 설명\n구조방정식 모형을 구조모형과 측정모형으로 나뉘어져 있다.\n경로도(path diagram)를 통해 구조방정식 모형의 가설을 볼 수 있음 \n\n\n측정모형\n이때, 측정모형에 해당하는 부분은 다음과 같고 \n\n\nCode\n\n\n목차나와라\n\nlibrary(lavaan)\n\nWarning: package 'lavaan' was built under R version 4.3.3\n\n\nThis is lavaan 0.6-19\nlavaan is FREE software! Please report any bugs.\n\n\n\n\n\n\n\n사진2\n\n\n구조모형에 해당하는 부분은 다음과 같다. \n전체 구조방정식 모형의 경로도를 수식으로 나타내면 다음과 같다. \n\n\n\nCode\n\n\n\ny &lt;-c(2,3)\n\n\n\n\n\n\nCode\n\n\n\nz &lt;- c(5,6)"
+    "text": "Show All Code   Hide All Code \n\n\n\n\n1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해\n\n\n\n\n기본 설명\n구조방정식 모형을 구조모형과 측정모형으로 나뉘어져 있다.\n경로도(path diagram)를 통해 구조방정식 모형의 가설을 볼 수 있음 \n\n\n측정모형\n이때, 측정모형에 해당하는 부분은 다음과 같고 \n\n\nCode\n\n\n\nlibrary(lavaan)\n\nWarning: package 'lavaan' was built under R version 4.3.3\n\n\nThis is lavaan 0.6-19\nlavaan is FREE software! Please report any bugs.\n\n\n\n\n\n\n\n사진2\n\n\n구조모형에 해당하는 부분은 다음과 같다. \n전체 구조방정식 모형의 경로도를 수식으로 나타내면 다음과 같다. \n\n\n\nCode\n\n\n\ny &lt;-c(2,3)\n\n\n\n\n\n\nCode\n\n\n\nz &lt;- c(5,6)"
   }
 ]
