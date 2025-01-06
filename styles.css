@@ -1,1 +1,130 @@
 /* css styles */
+.code-toggle-buttons {
+    position: sticky; /* 스크롤 시 고정 */
+    top: 10px; /* 위에서 10px 떨어진 위치 */
+    right: 10px; /* 오른쪽에서 10px 떨어진 위치 */
+    z-index: 1000; /* 다른 요소 위에 표시 */
+    display: flex; /* 버튼들을 가로로 배치 */
+    flex-direction: column; /* 버튼을 세로로 배치 */
+    gap: 10px; /* 버튼 간 간격 */
+    align-items: flex-end; /* 버튼들이 오른쪽 정렬되도록 설정 */
+  }
+
+  button {
+    background-color: #999999;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    border-radius: 3px;
+    margin: 0;
+    text-align: center;
+  }
+
+  button:hover {
+    background-color: #666666;
+  }
+
+  @media screen and (max-width: 768px) {
+    .code-toggle-buttons {
+      right: 5px; /* 작은 화면에서는 오른쪽 여백을 줄임 */
+      gap: 5px; /* 버튼 간 간격을 줄임 */
+    }
+    button {
+      padding: 5px;
+      font-size: 10px;
+    }
+  }
+
+/* 왼쪽 커스텀 사이드바 스타일 */
+.custom-sidebar {
+  position: fixed;
+  top: 80px; /* 네비게이션바 아래 위치 */
+  left: 20px;
+  width: 200px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 14px;
+  z-index: 1000; /* Quarto 목차와 겹치지 않도록 설정 */
+}
+
+.custom-sidebar h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.custom-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-sidebar li {
+  margin-bottom: 8px;
+}
+
+.custom-sidebar a {
+  text-decoration: none;
+  color: #007bff;
+  display: block;
+}
+
+.custom-sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Quarto 기본 목차를 오른쪽으로 고정 */
+#quarto-toc {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 200px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* 본문 여백 조정 */
+.main-content {
+  margin-left: 250px; /* 커스텀 사이드바 공간 확보 */
+  margin-right: 250px; /* Quarto 목차 공간 확보 */
+}
+
+/* 코드 토글 버튼 스타일 */
+.code-toggle-buttons {
+  position: sticky;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+button {
+  background-color: #999999;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #666666;
+}
+
+@media screen and (max-width: 768px) {
+  .code-toggle-buttons {
+    right: 5px;
+    gap: 5px;
+  }
+  button {
+    padding: 5px;
+    font-size: 10px;
+  }
+}

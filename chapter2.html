@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – Test Web</title>
+<title>2장 자료의 준비 – Test Web</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -97,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">SEM</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">about</span></a>
   </li>  
 </ul>
@@ -111,15 +111,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul>
+  <li><a href="#mplus란" id="toc-mplus란" class="nav-link active" data-scroll-target="#mplus란">Mplus란?</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">2장 자료의 준비</h1>
 </div>
 
 
@@ -136,9 +142,71 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>계량심리연구실 테스트 웹입니다.</p>
+<div class="code-toggle-buttons">
+<p><button class="code-toggle-button" id="show-all-code-button" onclick="toggleAllCodeBlocks(true)"> Show All Code </button> <button class="code-toggle-button" id="hide-all-code-button" onclick="toggleAllCodeBlocks(false)"> Hide All Code </button></p>
+</div>
+<div class="custom-sidebar">
+<ul>
+<li>
+<a href="chapter1.html">1장: 구조방정식 모형의 소개</a>
+</li>
+<li>
+<a href="chapter2.html">2장: 자료의 준비</a>
+</li>
+<li>
+<a href="chapter3.html">3장: 구조방정식 모형의 이해</a>
+</li>
+</ul>
+</div>
+<section id="mplus란" class="level1">
+<h1>Mplus란?</h1>
+<p>2 챕터 내용이 들어가면 됩니다.</p>
+<script>
+ function toggleSlide(blockId, buttonId) {
+    var codeBlock = document.getElementById(blockId);
+    var toggleButton = document.getElementById(buttonId);
+    if (codeBlock.style.display === "none" || codeBlock.style.height === "0px") {
+      codeBlock.style.display = "block";
+      codeBlock.style.height = "0px";
+      setTimeout(() => {
+        codeBlock.style.height = codeBlock.scrollHeight + "px";
+      }, 10); // 슬라이드 다운
+      toggleButton.innerHTML = "Hide";
+    } else {
+      codeBlock.style.height = "0px"; // 슬라이드 업
+      setTimeout(() => {
+        codeBlock.style.display = "none";
+      }, 300); // 애니메이션 후 숨김
+      toggleButton.innerHTML = "Code";
+    }
+  }
+
+  function toggleAllCodeBlocks(open) {
+    // Get all code blocks and buttons
+    var codeBlocks = document.querySelectorAll('.slide');
+    var buttons = document.querySelectorAll('[id^=toggle-button-]');
+    codeBlocks.forEach((block, index) => {
+      var button = buttons[index];
+      if (open) {
+        block.style.display = "block";
+        block.style.height = "0px";
+        setTimeout(() => {
+          block.style.height = block.scrollHeight + "px";
+        }, 10); // 슬라이드 다운
+        if (button) button.innerHTML = "Hide";
+      } else {
+        block.style.height = "0px"; // 슬라이드 업
+        setTimeout(() => {
+          block.style.display = "none";
+        }, 300); // 애니메이션 후 숨김
+        if (button) button.innerHTML = "Code";
+      }
+    });
+  }
+</script>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
