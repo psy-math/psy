@@ -110,5 +110,40 @@
     "title": "1장 구조방정식 모형의 소개",
     "section": "구조방정식의 역사",
     "text": "구조방정식의 역사"
+  },
+  {
+    "objectID": "SEM/SEM.html",
+    "href": "SEM/SEM.html",
+    "title": "SEM",
+    "section": "",
+    "text": "1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해"
+  },
+  {
+    "objectID": "SEM/SEM.html#목차",
+    "href": "SEM/SEM.html#목차",
+    "title": "SEM",
+    "section": "목차",
+    "text": "목차\n\n1장: 구조방정식 모형의 소개\n2장: 자료의 준비\n3장: 구조방정식 모형의 이해"
+  },
+  {
+    "objectID": "SEM/chapter2.html",
+    "href": "SEM/chapter2.html",
+    "title": "2장 자료의 준비",
+    "section": "",
+    "text": "Show All Code   Hide All Code \n\n\n\n\n1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해\n\n\n\n\nMplus란?\n2 챕터 내용이 들어가면 됩니다."
+  },
+  {
+    "objectID": "SEM/chapter1.html",
+    "href": "SEM/chapter1.html",
+    "title": "1장 구조방정식 모형의 소개",
+    "section": "",
+    "text": "Show All Code   Hide All Code \n\n\n\n\n1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해\n\n\n\n\n구조방정식이란?\n해당 내용이 들어가면 됩니다\n\n\n구조방정식의 활용"
+  },
+  {
+    "objectID": "SEM/chapter3.html",
+    "href": "SEM/chapter3.html",
+    "title": "3장 구조방정식 모형의 이해",
+    "section": "",
+    "text": "Show All Code   Hide All Code \n\n\n\n\n1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해\n\n\n\n\n기본 설명\n구조방정식 모형을 구조모형과 측정모형으로 나뉘어져 있다.\n경로도(path diagram)를 통해 구조방정식 모형의 가설을 볼 수 있음 \n\n\n측정모형\n이때, 측정모형에 해당하는 부분은 다음과 같고 \n\n\nCode\n\n\n목차나와라\n\nlibrary(lavaan)\n\nWarning: package 'lavaan' was built under R version 4.3.3\n\n\nThis is lavaan 0.6-19\nlavaan is FREE software! Please report any bugs.\n\n\n\n\n\n\n\n사진2\n\n\n구조모형에 해당하는 부분은 다음과 같다. \n전체 구조방정식 모형의 경로도를 수식으로 나타내면 다음과 같다. \n\n\n\nCode\n\n\n\ny &lt;-c(2,3)\n\n\n\n\n\n\nCode\n\n\n\nz &lt;- c(5,6)"
   }
 ]
