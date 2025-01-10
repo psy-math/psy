@@ -1,31 +1,31 @@
 [
   {
+    "objectID": "SEM/SEM.html",
+    "href": "SEM/SEM.html",
+    "title": "구조방정식 모형",
+    "section": "",
+    "text": "1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해"
+  },
+  {
+    "objectID": "SEM/SEM.html#목차",
+    "href": "SEM/SEM.html#목차",
+    "title": "구조방정식 모형",
+    "section": "목차",
+    "text": "목차\n\n1장: 구조방정식 모형의 소개\n2장: 자료의 준비\n3장: 구조방정식 모형의 이해"
+  },
+  {
+    "objectID": "SEM/chapter2.html",
+    "href": "SEM/chapter2.html",
+    "title": "Mplus란?",
+    "section": "",
+    "text": "1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해\n\n\n\n\nMplus란?\n2 챕터 내용이 들어가면 됩니다."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "This is test_web",
     "section": "",
     "text": "구조방정식 웹 강의노트 입니다"
-  },
-  {
-    "objectID": "index.html#제1장-구조방정식-모형의-소개",
-    "href": "index.html#제1장-구조방정식-모형의-소개",
-    "title": "This is test_web",
-    "section": "제1장 구조방정식 모형의 소개",
-    "text": "제1장 구조방정식 모형의 소개"
-  },
-  {
-    "objectID": "index.html#제2장-자료의-준비",
-    "href": "index.html#제2장-자료의-준비",
-    "title": "This is test_web",
-    "section": "제2장 자료의 준비",
-    "text": "제2장 자료의 준비"
-  },
-  {
-    "objectID": "index.html#제3장-구조방정식-모형의-이해",
-    "href": "index.html#제3장-구조방정식-모형의-이해",
-    "title": "This is test_web",
-    "section": "제3장 구조방정식 모형의 이해",
-    "text": "제3장 구조방정식 모형의 이해\n구조방정식 모형을 구조모형과 측정모형으로 나뉘어져 있다.\n경로도(path diagram)를 통해 구조방정식 모형의 가설을 볼 수 있음 \n이때, 측정모형에 해당하는 부분은 다음과 같고 \n\n\nCode\n\n\n\nlibrary(lavaan)\nmodel &lt;- '\n  우울 =~ 우울1 + 우울2 + 우울3\n  면역기능 =~ 면역1 + 면역2 + 면역3\n  질병 =~ 질병1 + 질병2 + 질병3\n  우울 ~~ 면역기능\n  우울 ~~ 질병\n  면역기능 ~~ 질병\n'\ndata &lt;- data.frame(\n  우울1 = rnorm(100, mean = 50, sd = 10),\n  우울2 = rnorm(100, mean = 50, sd = 10),\n  우울3 = rnorm(100, mean = 50, sd = 10),\n  면역1 = rnorm(100, mean = 50, sd = 10),\n  면역2 = rnorm(100, mean = 50, sd = 10),\n  면역3 = rnorm(100, mean = 50, sd = 10),\n  질병1 = rnorm(100, mean = 50, sd = 10),\n  질병2 = rnorm(100, mean = 50, sd = 10),\n  질병3 = rnorm(100, mean = 50, sd = 10)\n)\n# 모델 적합\nfit &lt;- sem(model, data = data)\n\n# 결과 출력\nsummary(fit, fit.measures = TRUE, standardized = TRUE)\n\n\n\n\n\n\n사진2\n\n\n구조모형에 해당하는 부분은 다음과 같다. \n전체 구조방정식 모형의 경로도를 수식으로 나타내면 다음과 같다. \n\n\n\nCode\n\n\n\ny &lt;-c(2,3)\n\n\n\n\n\n\nCode\n\n\n\nz &lt;- c(5,6)"
   },
   {
     "objectID": "about.html",
@@ -35,115 +35,17 @@
     "text": "계량심리연구실 테스트 웹입니다."
   },
   {
-    "objectID": "index.html#chapter1",
-    "href": "index.html#chapter1",
-    "title": "구조방정식 모형",
-    "section": "제1장 구조방정식 모형의 소개",
-    "text": "제1장 구조방정식 모형의 소개\n\n예제: 변수 A와 변수 B 사이의 상관관계를 분석합니다.\n활용: 학술 연구, 심리학, 마케팅 등."
-  },
-  {
-    "objectID": "index.html#chapter2",
-    "href": "index.html#chapter2",
-    "title": "구조방정식 모형",
-    "section": "제2장 자료의 준비",
-    "text": "제2장 자료의 준비\n구조방정식 모형의 적용을 위해서는 자료의 정리가 중요합니다.\n\n예비 단계: 데이터 정규화 및 결측값 처리.\n도구: R 패키지 lavaan을 사용."
-  },
-  {
-    "objectID": "index.html#chapter3",
-    "href": "index.html#chapter3",
-    "title": "구조방정식 모형",
-    "section": "제3장 구조방정식 모형의 이해",
-    "text": "제3장 구조방정식 모형의 이해\n구조방정식 모형을 구조모형과 측정모형으로 나뉘어져 있다.\n경로도(path diagram)를 통해 구조방정식 모형의 가설을 볼 수 있음 \n이때, 측정모형에 해당하는 부분은 다음과 같고 \n\n\nCode\n\n\n\n\nCode\nlibrary(lavaan)\nmodel &lt;- '\n  우울 =~ 우울1 + 우울2 + 우울3\n  면역기능 =~ 면역1 + 면역2 + 면역3\n  질병 =~ 질병1 + 질병2 + 질병3\n  우울 ~~ 면역기능\n  우울 ~~ 질병\n  면역기능 ~~ 질병\n'\ndata &lt;- data.frame(\n  우울1 = rnorm(100, mean = 50, sd = 10),\n  우울2 = rnorm(100, mean = 50, sd = 10),\n  우울3 = rnorm(100, mean = 50, sd = 10),\n  면역1 = rnorm(100, mean = 50, sd = 10),\n  면역2 = rnorm(100, mean = 50, sd = 10),\n  면역3 = rnorm(100, mean = 50, sd = 10),\n  질병1 = rnorm(100, mean = 50, sd = 10),\n  질병2 = rnorm(100, mean = 50, sd = 10),\n  질병3 = rnorm(100, mean = 50, sd = 10)\n)\n# 모델 적합\nfit &lt;- sem(model, data = data)\n\n# 결과 출력\nsummary(fit, fit.measures = TRUE, standardized = TRUE)\n\n\n\n\n\n\n\n사진2\n\n\n구조모형에 해당하는 부분은 다음과 같다. \n전체 구조방정식 모형의 경로도를 수식으로 나타내면 다음과 같다. \n\n\n\nCode\n\n\n\n\nCode\ny &lt;-c(2,3)\n\n\n\n\n\n\n\nCode\n\n\n\n\nCode\nz &lt;- c(5,6)"
-  },
-  {
-    "objectID": "chapter1.html",
-    "href": "chapter1.html",
-    "title": "1장 구조방정식 모형의 소개",
-    "section": "",
-    "text": "Show All Code   Hide All Code \n\n\n\n\n1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해\n\n\n\n\n구조방정식이란?\n해당 내용이 들어가면 됩니다\n\n\n구조방정식의 활용"
-  },
-  {
-    "objectID": "chapter3.html",
-    "href": "chapter3.html",
-    "title": "3장 구조방정식 모형의 이해",
-    "section": "",
-    "text": "Show All Code   Hide All Code \n\n\n\n\n1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해\n\n\n\n\n기본 설명\n구조방정식 모형을 구조모형과 측정모형으로 나뉘어져 있다.\n경로도(path diagram)를 통해 구조방정식 모형의 가설을 볼 수 있음 \n\n\n측정모형\n이때, 측정모형에 해당하는 부분은 다음과 같고 \n\n\nCode\n\n\n\nlibrary(lavaan)\n\nWarning: package 'lavaan' was built under R version 4.3.3\n\n\nThis is lavaan 0.6-19\nlavaan is FREE software! Please report any bugs.\n\n\n\n\n\n\n\n사진2\n\n\n구조모형에 해당하는 부분은 다음과 같다. \n전체 구조방정식 모형의 경로도를 수식으로 나타내면 다음과 같다. \n\n\n\nCode\n\n\n\ny &lt;-c(2,3)\n\n\n\n\n\n\nCode\n\n\n\nz &lt;- c(5,6)"
-  },
-  {
-    "objectID": "chapter2.html",
-    "href": "chapter2.html",
-    "title": "2장 자료의 준비",
-    "section": "",
-    "text": "Show All Code   Hide All Code \n\n\n\n\n1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해\n\n\n\n\nMplus란?\n2 챕터 내용이 들어가면 됩니다."
-  },
-  {
-    "objectID": "SEM.html",
-    "href": "SEM.html",
-    "title": "SEM",
-    "section": "",
-    "text": "1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해"
-  },
-  {
-    "objectID": "SEM.html#목차",
-    "href": "SEM.html#목차",
-    "title": "SEM",
-    "section": "목차",
-    "text": "목차\n\n1장: 구조방정식 모형의 소개\n2장: 자료의 준비\n3장: 구조방정식 모형의 이해"
-  },
-  {
-    "objectID": "chapter3.html#코드",
-    "href": "chapter3.html#코드",
-    "title": "제3장 구조방정식 모형의 이해",
-    "section": "코드",
-    "text": "코드\n목차나와라\n\nlibrary(lavaan)\n\nWarning: package 'lavaan' was built under R version 4.3.3\n\n\nThis is lavaan 0.6-19\nlavaan is FREE software! Please report any bugs."
-  },
-  {
-    "objectID": "chapter1.html#구조방정식의-변형",
-    "href": "chapter1.html#구조방정식의-변형",
-    "title": "1장 구조방정식 모형의 소개",
-    "section": "구조방정식의 변형",
-    "text": "구조방정식의 변형"
-  },
-  {
-    "objectID": "chapter1.html#구조방정식의-역사",
-    "href": "chapter1.html#구조방정식의-역사",
-    "title": "1장 구조방정식 모형의 소개",
-    "section": "구조방정식의 역사",
-    "text": "구조방정식의 역사"
-  },
-  {
-    "objectID": "SEM/SEM.html",
-    "href": "SEM/SEM.html",
-    "title": "SEM",
-    "section": "",
-    "text": "1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해"
-  },
-  {
-    "objectID": "SEM/SEM.html#목차",
-    "href": "SEM/SEM.html#목차",
-    "title": "SEM",
-    "section": "목차",
-    "text": "목차\n\n1장: 구조방정식 모형의 소개\n2장: 자료의 준비\n3장: 구조방정식 모형의 이해"
-  },
-  {
-    "objectID": "SEM/chapter2.html",
-    "href": "SEM/chapter2.html",
-    "title": "2장 자료의 준비",
-    "section": "",
-    "text": "1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해\n\n\n\n\nMplus란?\n2 챕터 내용이 들어가면 됩니다."
-  },
-  {
     "objectID": "SEM/chapter1.html",
     "href": "SEM/chapter1.html",
-    "title": "1장 구조방정식 모형의 소개",
+    "title": "목차1",
     "section": "",
-    "text": "Show All Code   Hide All Code \n\n\n\n\n1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해\n\n\n\n\n구조방정식이란?\n해당 내용이 들어가면 됩니다\n\n\n구조방정식의 활용"
+    "text": "1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해\n\n\n\n\n\n목차1\n해당 내용이 들어가면 됩니다\n\n\n목차 2\n목차 2 내용입니다\n\n\n목차3\n목차를 추가할때는 # 목차 제목 으로 추가하시면 됩니다"
   },
   {
     "objectID": "SEM/chapter3.html",
     "href": "SEM/chapter3.html",
-    "title": "3장 구조방정식 모형의 이해",
+    "title": "기본 설명",
     "section": "",
-    "text": "1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해\n\n\n\n\n기본 설명\n구조방정식 모형을 구조모형과 측정모형으로 나뉘어져 있다.\n경로도(path diagram)를 통해 구조방정식 모형의 가설을 볼 수 있음 \n\n\n측정모형\n이때, 측정모형에 해당하는 부분은 다음과 같고 \n\nlibrary(lavaan)\n\nWarning: package 'lavaan' was built under R version 4.3.3\n\n\nThis is lavaan 0.6-19\nlavaan is FREE software! Please report any bugs.\n\n\n\n\n\n사진2\n\n\n구조모형에 해당하는 부분은 다음과 같다. \n전체 구조방정식 모형의 경로도를 수식으로 나타내면 다음과 같다. \n\ny &lt;-c(2,3)\n\n\nz &lt;- c(5,6)"
+    "text": "1장: 구조방정식 모형의 소개\n\n\n2장: 자료의 준비\n\n\n3장: 구조방정식 모형의 이해\n\n\n\n\n\n기본 설명\n구조방정식 모형을 구조모형과 측정모형으로 나뉘어져 있다.\n경로도(path diagram)를 통해 구조방정식 모형의 가설을 볼 수 있음 \n\n\n측정모형\n이때, 측정모형에 해당하는 부분은 다음과 같고\n\nlibrary(lavaan)\n\nWarning: package 'lavaan' was built under R version 4.3.3\n\n\nThis is lavaan 0.6-19\nlavaan is FREE software! Please report any bugs.\n\n\n\n\n\n사진2\n\n\n구조모형에 해당하는 부분은 다음과 같다. \n전체 구조방정식 모형의 경로도를 수식으로 나타내면 다음과 같다. \n\ny &lt;-c(2,3)\n\n\nz &lt;- c(5,6)"
   }
 ]
