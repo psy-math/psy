@@ -142,9 +142,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="code-toggle-buttons">
-<p><button class="code-toggle-button" id="show-all-code-button" onclick="toggleAllCodeBlocks(true)"> Show All Code </button> <button class="code-toggle-button" id="hide-all-code-button" onclick="toggleAllCodeBlocks(false)"> Hide All Code </button></p>
-</div>
 <div class="custom-sidebar">
 <ul>
 <li>
@@ -161,49 +158,6 @@ ul.task-list li input[type="checkbox"] {
 <section id="mplus란" class="level1">
 <h1>Mplus란?</h1>
 <p>2 챕터 내용이 들어가면 됩니다.</p>
-<script>
- function toggleSlide(blockId, buttonId) {
-    var codeBlock = document.getElementById(blockId);
-    var toggleButton = document.getElementById(buttonId);
-    if (codeBlock.style.display === "none" || codeBlock.style.height === "0px") {
-      codeBlock.style.display = "block";
-      codeBlock.style.height = "0px";
-      setTimeout(() => {
-        codeBlock.style.height = codeBlock.scrollHeight + "px";
-      }, 10); // 슬라이드 다운
-      toggleButton.innerHTML = "Hide";
-    } else {
-      codeBlock.style.height = "0px"; // 슬라이드 업
-      setTimeout(() => {
-        codeBlock.style.display = "none";
-      }, 300); // 애니메이션 후 숨김
-      toggleButton.innerHTML = "Code";
-    }
-  }
-
-  function toggleAllCodeBlocks(open) {
-    // Get all code blocks and buttons
-    var codeBlocks = document.querySelectorAll('.slide');
-    var buttons = document.querySelectorAll('[id^=toggle-button-]');
-    codeBlocks.forEach((block, index) => {
-      var button = buttons[index];
-      if (open) {
-        block.style.display = "block";
-        block.style.height = "0px";
-        setTimeout(() => {
-          block.style.height = block.scrollHeight + "px";
-        }, 10); // 슬라이드 다운
-        if (button) button.innerHTML = "Hide";
-      } else {
-        block.style.height = "0px"; // 슬라이드 업
-        setTimeout(() => {
-          block.style.display = "none";
-        }, 300); // 애니메이션 후 숨김
-        if (button) button.innerHTML = "Code";
-      }
-    });
-  }
-</script>
 
 
 </section>

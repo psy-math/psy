@@ -177,9 +177,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div class="code-toggle-buttons">
-<p><button class="code-toggle-button" id="show-all-code-button" onclick="toggleAllCodeBlocks(true)"> Show All Code </button> <button class="code-toggle-button" id="hide-all-code-button" onclick="toggleAllCodeBlocks(false)"> Hide All Code </button></p>
-</div>
 <div class="custom-sidebar">
 <ul>
 <li>
@@ -201,11 +198,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="측정모형" class="level1">
 <h1>측정모형</h1>
 <p>이때, 측정모형에 해당하는 부분은 다음과 같고 <!-- Button 1 --></p>
-<div style="margin-bottom: 10px;">
-<button id="toggle-button-1" onclick="toggleSlide('code-block-1', 'toggle-button-1')">
-<p>Code</p>
-</button>
-<div id="code-block-1" class="slide" style="display: none; overflow: hidden; border: 1px solid #ccc; padding: 10px; margin-top: 10px;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lavaan)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
@@ -216,8 +208,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 lavaan is FREE software! Please report any bugs.</code></pre>
 </div>
 </div>
-</div>
-</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="측정모형.png" class="img-fluid figure-img"></p>
@@ -226,71 +216,12 @@ lavaan is FREE software! Please report any bugs.</code></pre>
 </div>
 <p>구조모형에 해당하는 부분은 다음과 같다. <img src="경로모형.jpg" class="img-fluid" alt="사진3"></p>
 <p>전체 구조방정식 모형의 경로도를 수식으로 나타내면 다음과 같다. <img src="수식.png" class="img-fluid" alt="사진4"></p>
-<!-- Button 2 -->
-<div style="margin-bottom: 10px;">
-<button id="toggle-button-2" onclick="toggleSlide('code-block-2', 'toggle-button-2')">
-<p>Code</p>
-</button>
-<div id="code-block-2" class="slide" style="display: none; overflow: hidden; border: 1px solid #ccc; padding: 10px; margin-top: 10px;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</div>
-<!-- Button 3 -->
-<div style="margin-bottom: 10px;">
-<button id="toggle-button-3" onclick="toggleSlide('code-block-3', 'toggle-button-3')">
-<p>Code</p>
-</button>
-<div id="code-block-3" class="slide" style="display: none; overflow: hidden; border: 1px solid #ccc; padding: 10px; margin-top: 10px;">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">5</span>,<span class="dv">6</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</div>
-<script>
- function toggleSlide(blockId, buttonId) {
-    var codeBlock = document.getElementById(blockId);
-    var toggleButton = document.getElementById(buttonId);
-    if (codeBlock.style.display === "none" || codeBlock.style.height === "0px") {
-      codeBlock.style.display = "block";
-      codeBlock.style.height = "0px";
-      setTimeout(() => {
-        codeBlock.style.height = codeBlock.scrollHeight + "px";
-      }, 10); // 슬라이드 다운
-      toggleButton.innerHTML = "Hide";
-    } else {
-      codeBlock.style.height = "0px"; // 슬라이드 업
-      setTimeout(() => {
-        codeBlock.style.display = "none";
-      }, 300); // 애니메이션 후 숨김
-      toggleButton.innerHTML = "Code";
-    }
-  }
-
-  function toggleAllCodeBlocks(open) {
-    // Get all code blocks and buttons
-    var codeBlocks = document.querySelectorAll('.slide');
-    var buttons = document.querySelectorAll('[id^=toggle-button-]');
-    codeBlocks.forEach((block, index) => {
-      var button = buttons[index];
-      if (open) {
-        block.style.display = "block";
-        block.style.height = "0px";
-        setTimeout(() => {
-          block.style.height = block.scrollHeight + "px";
-        }, 10); // 슬라이드 다운
-        if (button) button.innerHTML = "Hide";
-      } else {
-        block.style.height = "0px"; // 슬라이드 업
-        setTimeout(() => {
-          block.style.display = "none";
-        }, 300); // 애니메이션 후 숨김
-        if (button) button.innerHTML = "Code";
-      }
-    });
-  }
-</script>
 
 
 </section>
